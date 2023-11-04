@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UZAUTO MOTORS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.regisratsiya {
+    display: flex;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 10px 300px;
+    font-size: 13px;
+}
+.regisratsiya a {
+    margin-left: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.regisratsiya input {
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.011);
+    padding: 9px 40px;
+    margin-left: 50px;
+    outline: none;
+}
+.regisratsiya p {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.regisratsiya p:nth-last-child(2) {
+    margin-left: 100px;
+}
+.navigatsion-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+.navigatsion-bar a {
+    background-color: #f9f9f9;
+    margin-left: 10px;
+    font-size: 12px;
+    text-decoration: none;
+}
+.logo_light {
+    width: 100px;
+}
+.dropdown  a {
+    position: relative;
+}
+.dropdown  a:hover {
+    color: #03a9f4;
+}
+.dropdown:hover {
+    color: #03a9f4;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+}
+.dropdown-menu a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+}
+.dropdown-menu a:hover {
+    background-color: #f1f1f1 !important;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown  a {
+    position: relative;
+    transition: .3s;
+    margin-left: 20px;
+}
+.dropdown  a:hover {
+    color: #03a9f4;
+}
+.dropdown-menu-3 {
+    display: none;
+    position: absolute;
+}
+.dropdown-menu-3 a {
+    color: black;
+    padding: 10px 15px;
+    margin-left: 200px;
+    text-decoration: none;
+    display: block;
+    width: 500px;
+}
+.dropdown-menu-3 a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-menu-3 {
+    display: block;
+}
+.dropdown-2  a:hover {
+    color: #03a9f4;
+}
+.dropdown-menu-2 {
+    background-color: #ffffff;
+    display: none;
+    position: absolute;
+    width: 1100px;
+}
+.dropdown-menu-2 a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+}
+.dropdown-menu-2 a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown-2:hover .dropdown-menu-2 {
+    display: block;
+}
+
+
+.big-img img {
+    width: 100%;
+}
+
+
+/* Section */
+.section .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    color: #324545;
+    margin-top: 20px;
+    margin-bottom: 2;
+}
+.section .row i {
+    margin: 10px;
+}
+.fake {
+    width: 400px;
+    border: 1px solid #576162;
+    margin-left: 100px;
+    overflow: hidden;
+    height: 550px;
+}
+.fake .text-page-1 {
+    display: flex;
+}
+.fake .text-page-1 p {
+    margin-left: 10px;
+}
+.fake .text-page-1 i {
+    margin-left: 10px;
+}
+.fake .text-page-2 a {
+    text-decoration: none;
+    color: #324545;
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid;
+}
+.fake .text-page-2 a:hover {
+    color: #03a9f4;
+}
+.fake img{
+    width: 120%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    height: 400px;
+}
+.text-page-3 {
+    padding: 10px;
+}
+.big-div {
+    display: flex;
+}
+
+
+
+.fake-2 {
+    width: 400px;
+    border: 1px solid #576162;
+    margin-left: 100px;
+    overflow: hidden;
+    height: 520px;
+}
+.fake-2 .text-page-1 {
+    display: flex;
+}
+.fake-2 .text-page-1 p {
+    margin-left: 10px;
+}
+.fake-2 .text-page-1 i {
+    margin-left: 10px;
+}
+.fake-2 .text-page-2 a {
+    text-decoration: none;
+    color: #324545;
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid;
+}
+.fake-2 .text-page-2 a:hover {
+    color: #03a9f4;
+}
+.fake-2 img{
+    width: 120%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    height: 400px;
+}
+
+
+
+.fake-3 {
+    width: 400px;
+    border: 1px solid #576162;
+    margin-left: 100px;
+    overflow: hidden;
+    height: 580px;
+}
+.fake-3 .text-page-1 {
+    display: flex;
+}
+.fake-3 .text-page-1 p {
+    margin-left: 10px;
+}
+.fake-3 .text-page-1 i {
+    margin-left: 10px;
+}
+.fake-3 .text-page-2 a {
+    text-decoration: none;
+    color: #324545;
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid;
+}
+.fake-3 .text-page-2 a:hover {
+    color: #03a9f4;
+}
+.fake-3 img{
+    width: 120%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    height: 400px;
+}
+.btn-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.btn-div button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #337ab7;
+    color: #fff;
+    border-color: #2e6da4;
+}
+
+
+
+.section-2 {
+    background-color: #f9fafc;
+    height: 100%;
+}
+.section-2 .row-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    color: #324545;
+    margin-top: 20px;
+    margin-bottom: 2;
+}
+.section-2 .row-2 i {
+    margin: 10px;
+}
+.div {
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px 20px 20px 20px;
+}
+.div .text-page-4 {
+    position: relative;
+    top: 220px;
+    left: 15px;
+    color: #fff;
+}
+
+.div-2 {
+    width: 400px;
+    height: 290px;
+    overflow: hidden;
+    position: relative;
+    bottom: 42px;
+    margin-left: 20px;
+    border-radius: 20px 20px 20px 20px;
+}
+.div-2 .text-page-4 {
+    position: relative;
+    top: 220px;
+    left: 15px;
+    color: #fff;
+}
+.big-div-2 {
+    display: flex;
+    justify-content: center;
+}
+.div-3 {
+    width: 400px;
+    height: 290px;
+    overflow: hidden;
+    position: relative;
+    bottom: 42px;
+    margin-left: 20px;
+    border-radius: 20px 20px 20px 20px;
+}
+.div-3 .text-page-4 {
+    position: relative;
+    top: 220px;
+    left: 15px;
+    color: #fff;
+}
+.big-div-3 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.section-3 .text-page-5 {
+    margin-left: 200px;
+    width: 550px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.text-page-5 {
+    color: #666666;
+}
+.text-page-5 strong:first-child {
+    font-size: 20px;
+}
+.img-div-2 img {
+    width: 90%;
+    margin-top: 70px;
+}
+
+
+
+.section-end {
+    background: #191E21;
+}
+.text-page-img {
+    margin-top: 50px;
+}
+.text-page-img img {
+    color: #ddd;
+}
+.big-div-4 {
+    display: flex;
+    outline: none;
+    justify-content: center;
+}
+.section-end ul {
+    overflow: hidden;
+}
+.section-end .text-page h4, ul {
+    width: 280px;
+    margin-left: 100px;
+    margin-top: 30px;
+    line-height: 30px;
+    color: #ddd;
+}
+.section-end .text-page-2 h4, ul {
+    width: 280px;
+    margin-top: 20px;
+    margin-left: 100px;
+    line-height: 30px;
+    color: #ddd;
+}
+.section-end .text-page-3 h4, ul {
+    width: 280px;
+    margin-top: 20px;
+    margin-left: 100px;
+    line-height: 30px;
+    color: #ddd;
+}
+.section-end h4 {
+    color: #fff;
+    font-size: 15px;
+    
+}
+.text-page-3 ul li:nth-child(2) {
+    color: #989898;
+}
+.text-page-3 ul li:nth-child(3) {
+    color: #989898;
+}
+.text-page-3 ul li:nth-child(4) {
+    color: #03a9f4;
+}
+
+.big-div-5 {
+    display: flex;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.25);
+    background-color: #111213;
+    color: #989898;
+}
+.big-div-5 p {
+    margin-left: 200px;
+}
+.big-div-5 p:nth-child(2) {
+    width: 300px;
+    margin-left: 50px;
+}
+.big-div-5 a {
+    margin-left: 200px;
+    text-decoration: none;
+    color: #989898;
+    width: 140px;
+}
+.big-div-5 a:hover {
+    color: #03a9f4;
+}
+.big-div-5 a:nth-child(2) {
+    margin-left: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="regisratsiya">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> UZAUTOJOBS</a>
+            <a href="#"> <i class="fa-solid fa-phone"></i> CALL-MARKAZI</a>
+            <p>+99878 141-77-77</p>
+            <input type="search" placeholder="Qidiruv">
+            <p><i class="fa-solid fa-envelope"></i> SO'RANG JAVOB BERAMIZ</p>
+            <p><i class="fa-solid fa-earth-europe"></i>UZ</p>
+        </div>
+        <div class="navigatsion-bar">
+            <img class="logo_light" src="https://uzautomotors.com/chevro/images/motors-logo.jpg" alt="UZAUTO MOTORS Logo" width="150px">
+            <div class="dropdown">
+                <a href="#">KOMPANIYA</a>
+                <div class="dropdown-menu">
+                    <a href="#">UZAUTO MOTORS</a>
+                    <a href="#">KOMPANIYA HAQIDA</a>
+                    <a href="#">RAHBARIYAT</a>
+                    <a href="#">KUZTUV KENGASHI</a>
+                    <a href="#">KORXONA FAOLIYATI</a>
+                    <a href="#">NORMATIV HUQUQIY HUJJATLAR</a>
+                    <a href="#">BIZNES-REJA</a>
+                    <a href="#">OMMAVIY TADBIRLAR</a>
+                    <a href="#">AUDIT XULOSASI</a>
+                </div>
+                </div>
+            <div class="dropdown-2">
+                <a href="#">AVTOMOBILLAR</a>
+                <div class="dropdown-menu-2">
+                    <img src="https://uzautomotors.com/chevro/images/team/labo.png" width="200px">
+                    <img src="https://uzautomotors.com/chevro/images/team/damas.png" alt="Chevrolet Damas" width="200px">
+                    <img src="https://uzautomotors.com/chevro/images/team/spark.png" width="200px">
+                    <img src="https://uzautomotors.com/chevro/images/team/nexia.png" width="200px">
+                    <img src="https://uzautomotors.com/chevro/images/team/cobalt.png" width="200px">
+                    <img src="https://uzautomotors.com/chevro/images/team/lacetti.png" width="200px">
+                    <img src="https://uzautomotors.com/chevro/images/team/malibu3.png" width="200px">
+                    <img src="https://uzautomotors.com/chevro/images/team/malibu3.png" width="200px">
+                    <img src="https://uzautomotors.com/chevro/images/team/onix.png" width="200px">
+                    <img src="https://uzautomotors.com/chevro/images/team/tracker2.png" width="200px">
+                    <img src="https://uzautomotors.com/chevro/images/team/equinox.png" width="200px">
+                    <img src="https://uzautomotors.com/chevro/images/team/traverse.png" width="200px">
+                    <img src="https://uzautomotors.com/chevro/images/team/traverse.png" width="200px">
+                    <img src="https://uzautomotors.com/chevro/images/team/tahoe.png" width="200px">
+                </div>
+                </div>
+                <div class="dropdown">
+            <a href="#">EHTIYOT QISMLAR</a>
+        </div>
+            <div class="dropdown">
+                <a href="#">XARIDORLARGA</a>
+                <div class="dropdown-menu">
+                    <a href="#">DILERLARNING CALL-MARKAZLARI</a>
+                    <a href="#">DILERLAR</a>
+                    <a href="#">UZAUTOSAVDO</a>
+                    <a href="#">NARXLAR</a>
+                    <a href="#">IMZOLANGAN SHARTNOMANING HOLATI</a>
+                    <a href="#">EHTIYOT QISMLAR</a>
+                    <a href="#">SERVIS MARKAZLARI</a>
+                </div>
+                </div>
+            <div class="dropdown">
+                <a href="#">EGALARIGA</a>
+                <div class="dropdown-menu">
+                    <a href="#">SOTUV OLDI KO'RIGI</a>
+                    <a href="#">KAFOLAT</a>
+                    <a href="#">TEXNIK XITMAT KO'RSATISH QOIDALARI</a>
+                    <a href="#">XIZMATLAR</a>
+                    <a href="#">NORMATIV-TEXNIK HUJJATLAR</a>
+                    <a href="#">EHTIYOT QISMLAR</a>
+                    <a href="#">SERVIS MARKAZLARI</a>
+                </div>
+                </div>
+            <div class="dropdown">
+                <a href="#">INVESTORLAR UCHUN</a>
+                <div class="dropdown-menu">
+                    <a href="#">MOLIYAVIY KO'RSATKICHLAR</a>
+                    <a href="#">BARQARORLIK</a>
+                    <a href="#">AHOLINI RO'YHATGA OLISH HAQIDA</a>
+                    <a href="#">SO'ROVNOMA</a>
+                    <a href="#">NIZOM</a>
+                    <a href="#">KREDIT REYTINGLAR</a>
+                    <a href="#">ALOQA</a>
+                </div>
+                </div>
+                <div class="dropdown">
+            <a href="#">TENDERLAR</a>
+        </div>
+            <div class="dropdown">
+            <a href="#">MATBUOT MARKAZI</a>
+            <div class="dropdown-menu">
+                <a href="#">YANGILIKLAR</a>
+                <a href="#">OAV BIZ HAQIMIZDA</a>
+                <a href="#">AHOLINI RO'YHATGA OLISH HAQIDA</a>
+                <a href="#">SO'ROVNOMA</a>
+                <a href="#">YARIMO'TKAZGICHLAR</a>
+                <a href="#">FAQ</a>
+                <a href="#">FOTOLAVHALAR</a>
+                <a href="#">VIDEOLAVHALAR</a>
+            </div>
+        </div>
+            <div class="dropdown">
+            <a href="#">ALOQA</a>
+            <div class="dropdown-menu">
+                <a href="#">UMUMIY ALOQALAR</a>
+                <a href="#">SO'RANG JAVOB BERAMIZ</a>
+                <a href="#">RAHBARLARNING QABUL QILISH JADVALI</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="big-img">
+            <a href="#"><img src="https://uzautomotors.com/images/uploads/onix-winter.jpg" alt=""></a>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="row">
+        <h2>SO'NGGI YANGILIKLAR</h2>
+        <i class="fa-regular fa-newspaper"></i>
+    </div>
+    <div class="big-div">
+    <div class="fake">
+        <img src="https://uzautomotors.com/images/uploads/5b2f85c0af69901bb6b57e3b7fc04afe.png" alt="">
+        <div class="text-page-1">
+        <i class="fa-solid fa-clock"></i>
+        <p>2023-09-25 15:30:10</p>
+        <i class="fa-solid fa-folder-open"></i>
+        <p>Yangiliklar</p>
+    </div>
+        <div class="text-page-2">
+            <a href="#">DARHOL OLIB KETISH UCHUN MAVJUD BO'LGAN AVTOMOBILLAR</a>
+        </div>
+        <div class="text-page-3">
+            <p>Yangi avtomobilingizni xarid qilgan zahotingiz olib ketishni istaysizmi?</p>
+        </div>
+    </div>
+    <div class="fake-2">
+        <img src="https://uzautomotors.com/images/uploads/96add6f5c28ddf8bb54db0aa059d2bca.png" alt="">
+        <div class="text-page-1">
+        <i class="fa-solid fa-clock"></i>
+        <p>2023-09-23 19:24:02</p>
+        <i class="fa-solid fa-folder-open"></i>
+        <p> Axborot xabari</p>
+    </div>
+        <div class="text-page-2">
+            <a href="#">SOXTASIGA ALDANIB QOLMANG!</a>
+        </div>
+        <div class="text-page-3">
+            <p>@uzavtosavdo_bot yordamida Siz mutlaqo BEPUL tarzda:</p>
+        </div>
+    </div>
+    <div class="fake-3">
+        <img src="https://uzautomotors.com/images/uploads/8abe675e07ce5d743ca166f72bbc8585.png" alt="">
+        <div class="text-page-1">
+        <i class="fa-solid fa-clock"></i>
+        <p>2023-09-23 16:18:46</p>
+        <i class="fa-solid fa-folder-open"></i>
+        <p>Yangiliklar</p>
+    </div>
+        <div class="text-page-2">
+            <a href="#">BUGUN INTERNETDA GO’YOKI CHEVROLET.UZ SAYTIDA KOʻRSATILGAN DEB CHEVROLET CAPTIVA 2024 AVTOMOBILLARINING NARXLARI HAQIDA SOXTA MAʼLUMOTLAR TARQALDI.</a>
+        </div>
+        <div class="text-page-3">
+            <p>Saytdan olingan skrinshotlarda Chevrolet Tracker avtomobil rasmi va narxlari</p>
+        </div>
+    </div>
+</div>
+<div class="btn-div">
+    <button>Barcha yangiliklar</button>
+</div>
+    </section>
+    <div class="video-div">
+        <video src="https://uzautomotors.com/chevro/video/uzavtosavdo-ads.mp4" class="media-video" width="100%" loop muted autoplay></video>
+    </div>
+
+    <section class="section-2">
+        <div class="row-2">
+            <h2>MEDIA UZAUTO MOTORS</h2>
+            <i class="fa-solid fa-video"></i>
+        </div>
+        <div class="big-div-2">
+        <div class="div">
+        <div class="text-page-4">
+            <h3>AVTOMOBIL XARID QILMOQCHIMISIZ?</h3>
+        </div>
+        <div class="img-div">
+            <img src="https://uzautomotors.com/documents/media/play.jpg" alt="">
+        </div>
+    </div>
+    <div class="div-2">
+        <div class="text-page-4">
+            <h3>DUNYO STANDARTIDAGI DVIGATEL MAHALLIYLASHTIRILMOQDA | UZAUTO MOTORS POWERTRAIN</h3>
+        </div>
+        <div class="img-div">
+            <img src="https://uzautomotors.com/documents/media/play.jpg" alt="">
+        </div>
+    </div>
+    <div class="div-3">
+        <div class="text-page-4">
+            <h3>“UZAUTO MOTORS” AJ: RAHBAR XODIMLAR UCHUN TRENING BO’LIB O’TDI</h3>
+        </div>
+        <div class="img-div">
+            <img src="https://uzautomotors.com/documents/media/play.jpg" alt="">
+        </div>
+    </div>
+</div>
+    </section>
+
+    <section class="section-3">
+        <div class="big-div">
+        <div class="text-page-5">
+            <strong>Mahsulotimiz</strong>
+            <p>Hozirgi paytda <strong>«UZAUTO MOTORS» AJ </strong> ning 2 ta ishlab chiqarish maydonchasida «Chevrolet»&nbsp;brendi&nbsp;ostida avtomobillarning 10 modeli ishlab chiqariladi, jumladan, Spark,&nbsp;Nexia 3,&nbsp;Cobalt, Lacetti (Gentra) modellari Asaka shahridagi asosiy ishlab chiqarish maydonida,Damas, Labo modellari Pitnak shahridagi filialda chiqariladi.</p>
+            <br>
+            <p><strong>UZAUTO MOTORS</strong>  yetkazib beruvchilari</p>
+            <br>
+            <p><strong>100</strong> dan ortiq, shu jumladan sub-etkazib beruvchilar. Asosiylari — <strong>«Uz SeMyung», «Uz Koram», «Avtokomponent», «Uz Dong Yang», «Uz Xanvu», «Uz Dong Von Ko», «Uz Dong Ju Peynt», «Uz Tong Xong Ko», «Uz Chasis» va «Avtooyna».</strong></p>
+        </div>
+        <div class="img-div-2">
+            <img src="https://uzautomotors.com/images/uploads/9927386f7d6b6a6adbb5ebd73c56d6aa.jpg" alt="">
+        </div> 
+    </div>
+    </section>
+
+    <section class="section-end">
+        <div class="big-div-4">
+        <div class="text-page-img">
+            <h4>BRENDLAR</h4>
+            <img src="https://uzautomotors.com/chevro/images/logo.png" alt="">
+        </div>
+        <div class="text-page">
+            <h4>MATBUOT MARKAZI</h4>
+            <ul>
+                <li>Yangiliklar</li>
+                <li>FAQ</li>
+                <li>Fotolavhalar</li>
+                <li>Videolavhalar</li>
+                <li>Bo'sh ish o'rinlar</li>
+            </ul>
+        </div>
+
+        <div class="text-page-2">
+            <h4>FOYDALI HAVOLALAR</h4>
+            <ul>
+                <li>O'zbekiston Respublikasi Prezidenti Sh.M. Mirziyoyevning virtual qabulxonasi</li>
+                <li>Yagona interaktiv davlat xizmatlari portali</li>
+                <li>Resurs bozori ma'lumoti va resurs markazi</li>
+                <li>Korporativ axborot yagona portali</li>
+            </ul>
+        </div>
+                <div class="text-page-3">
+            <h4>MANZIL</h4>
+            <ul>
+                <li>Toshkent sh., Mirobod tumani, A. Temur ko'chasi, 13 uy</li>
+                <li>Ish vaqti: 09:00-18:00</li>
+                <li>Tushlik: 13:00-14:00</li>
+                <li>Xaritada ko`rish</li>
+            </ul>
+        </div>
+    </div>
+    </section>
+
+    <section class="section-end-2">
+        <div class="big-div-5">
+        <p>© 1996 - 2023 «UZAUTO MOTORS» AJ</p>
+        <p>Veb sayt materiallaridan foydalanilganda havola ko'rsatilishi shart</p>
+        <a href="#">O`zbekiston ramzlari</a>
+        <a href="#">Foydali havolalar</a>
+    </div>
+    </section>
+</body>
+</html>
